@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const products = require('../data');
+const products = require('./data');
 
 app.get('/', (req, res) => {
   res.write(`<a href="/api/products">API PRODUCTS</a>`);
